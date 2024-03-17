@@ -1,0 +1,12 @@
+.note {
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+}
+#calendar-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+

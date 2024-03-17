@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-it Notes Program</title>
+    <link rel="stylesheet" href="beautify.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            margin-top: 50px;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .note {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Post-it Notes Program</h1>
+        <textarea id="note-entry" rows="3" cols="30"></textarea>
+        <br>
+        <button onclick="addNote()">Add Note</button>
+        <button onclick="confirmSetReminder()">Set Reminder</button>
+        <br><br>
+        <div id="notes-list"></div>
+        <div id="calendar-container"></div>
+
+    </div>
+
+    <script src="set_reminder.js"></script>
+</body>
+</html>
